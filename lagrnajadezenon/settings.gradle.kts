@@ -1,14 +1,8 @@
 pluginManagement {
     repositories {
-        google {
-            content {
-                includeGroupByRegex("com\\.android.*")
-                includeGroupByRegex("com\\.google.*")
-                includeGroupByRegex("androidx.*")
-            }
-        }
-        mavenCentral()
-        gradlePluginPortal()
+        google()  // ✅ Debe estar aquí
+        mavenCentral()  // ✅ Debe estar aquí
+        gradlePluginPortal()  // 🔄 Lo dejamos al final
     }
 }
 dependencyResolutionManagement {
@@ -21,4 +15,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "lagrnajadezenon"
 include(":app")
- 
